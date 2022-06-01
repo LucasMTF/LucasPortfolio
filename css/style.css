@@ -1,25 +1,40 @@
-:root{
-	--background-color: #000000;
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+    --background-color: #000000;
     --background-secondary: #080808;
-	--principal-white: #ffffff;
-    --secondary-red: #ffffff;
-    --border-color: #ffffff;
-    --secondary-gray: #cecece; 
+    --principal-white: #ffffff;
+    --principal-green: #61892F;
+    --secondary-green: #86C232;
+    --principal-grey: #474B4F;
+    --secondary-gray: #6B6E70;
+    --principal-black: #222629;
 }
 
 header {
     background-color: var(--background-secondary);
-    padding: 30px 0;
+    padding: 2% 0;
 }
 
-
-main{
+main {
+    width: 100%;
+    position: relative;
     background-color: var(--background-color);
+    background: linear-gradient(-60deg, var(--principal-green), var(--background-secondary), var(--background-color), var(--background-color), var(--background-color), var(--background-color), var(--background-color));
+    background-size: 100% 100%;
+    animation: change 1s ease-in-out infinite;
+
 }
 
-.box{
-	position: absolute;
+.box {
+    position: absolute;
     width: 940px;
+}
+
+div .stay {
+    color: var(--secondary-green);
 }
 
 nav {
@@ -34,24 +49,31 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: var(--principal-white);
+    color: var(--principal-grey);
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
 }
 
-nav a:hover{
-    color: var(--secondary-red);
+nav a:hover {
+    color: var(--secondary-green);
     text-decoration: underline;
 }
 
-.work{
-    width: 940px;
+.social {
+    width: 50px;
     margin: 0 auto;
     padding: 50px 0;
+    display: inline;
 }
 
-.work li{
+.work {
+    width: 940px;
+    margin: 0 0 5% 5%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    padding: 10%;
+}
+
+.work li {
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -59,89 +81,87 @@ nav a:hover{
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--principal-white);
     border-radius: 10px;
 }
 
-.work li:hover{
+.work li:hover h2 {
+    font-size: 25px;
+    color: var(--principal-white);
     border-color: var(--principal-white);
 }
 
-.work li:hover h2{
-    font-size: 25px;
-    color: var(--principal-white);
-}
-
-.work h2{
+.work h2 {
     font-size: 23px;
     font-weight: bold;
     padding-bottom: 20px;
     color: var(--principal-white);
 }
 
-.work li img{
+.work li img {
     width: 100%;
 }
 
-.work .resume{
+.work .resume {
     font-size: 18px;
     color: var(--principal-white);
 }
 
-.work .more{
+.work .more {
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
-    color: red;
-    margin-bottom: var(--border-color);
+    color: var(--secondary-green);
+    margin-bottom: var(--principal-white);
 }
 
-footer{
+footer {
     text-align: center;
     background-color: var(--background-secondary);
-    padding: 40px 0;
+    padding: 2%;
 }
 
-.copyright{
+.copyright {
     color: var(--secondary-gray);
     font-size: 13px;
     margin-top: 10px;
 }
 
 
-form label{
+form label {
     color: var(--principal-white);
 }
 
-main{
+main {
     width: 100%;
     padding-bottom: 1px;
     padding-top: 1px;
     margin: 0 auto;
 }
 
-form{
-    margin: 60px 50px;
-    
+form {
+    margin: 6.5% 3% 10% 3%; /* TOP - RIGHT - BOTTOM - LEFT*/
 }
 
-form label, form p{
+form label,
+form p {
     display: block;
-    font-size: 17px;
-    margin: 0 0 10px;
+    font-size: 18px;
+    margin: 0 0 0.5% 0;
 }
 
-form input, textarea{
+form input,
+textarea {
     display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
+    margin: 0 0 2%;
+    padding: 1% 1%;
     width: 50%;
 }
 
-.submit{
+.submit {
     width: 40%;
     padding: 15px 0;
-    background: orange;
+    background: var(--secondary-green);
     color: whitesmoke;
     font-weight: bold;
     font-size: 15px;
@@ -151,7 +171,103 @@ form input, textarea{
     cursor: pointer;
 }
 
-.submit:hover{
-    background: rgb(214, 118, 0);
+.submit:hover {
+    background: var(--principal-green);
     transform: scale(1.01);
+}
+
+main .title-home {
+    color: var(--principal-white);
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 0 5%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+}
+
+.resume-home-top {
+    color: var(--principal-white);
+    font-size: 20px;
+    margin: 15% 0% 2% 5%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+
+}
+
+.resume-home-bottom {
+    font-size: 20px;
+    color: var(--principal-white);
+    margin: 2% 0% 2% 5%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+}
+
+.resume-home-buttom {
+    font-size: 20px;
+    margin: 2% 0% 15% 5%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+    color: var(--principal-white);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social {
+    font-size: 12px;
+}
+
+
+.title-skills {
+    font-size: 50px;
+    color: var(--principal-white);
+    margin: 5% 0% 2.5% 5%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+}
+
+.resume-skills {
+    font-size: 18px;
+    color: var(--principal-white);
+    margin: 2.5% 0% 5% 5%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+}
+
+.title-about {
+    font-size: 40px;
+    color: var(--principal-white);
+    margin: 5% 0% 1% 3%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+}
+
+.title-about-top{
+    font-size: 40px;
+    color: var(--principal-white);
+    margin: 7% 0% 1% 3%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+}
+
+.resume-about-bottom {
+    font-size: 18px;
+    color: var(--principal-white);
+    margin: 0 0% 2.5% 3%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+}
+
+.second-title {
+    font-size: 25px;
+    color: var(--principal-white);
+    margin: 0 0% 1% 3%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
+}
+
+.formulario{
+    background-color: var(--principal-black);
+    border: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.resume-about-bottom-last{
+    font-size: 18px;
+    color: var(--principal-white);
+    margin: 0 0% 10% 3%;
+    /* TOP - RIGHT - BOTTOM - LEFT*/
 }

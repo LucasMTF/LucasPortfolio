@@ -17,8 +17,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html">Work</a></li>
-                    <li><a href="write.html">Write</a></li>
-                    <li><a href="contact.html" class="contact">Contact</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html" class="stay">Contact</a></li>
                 </nav>
             </div>
         </header>
@@ -26,25 +26,31 @@
 
         <!-- FORM -->
         <main>
-            <form>
+            <form class="card" action="email.php" method="post">
                 <label for="name">Nome e Sobrenome</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+                <input class="formulario" name="name" type="text" id="name" placeholder="Enter your name" required>
 
                 <label for="email">E-Mail</label>
-                <input type="email" id="email" placeholder="Enter your E-mail" required>
+                <input class="formulario" name="email" type="email" id="email" placeholder="Enter your E-mail" required>
 
                 <label for="message">Mensagem</label>
-                <textarea cols="88" rows="10" id="message" placeholder="Enter your message" required></textarea>
-                
-                <input type="submit" value="Enviar formulário" class="submit">
+                <textarea class="formulario" name="message" cols="88" rows="10" id="message" placeholder="Enter your message" required></textarea>
+
+                <button type="submit" value="Enviar formulário" class="submit">Enviar mensagem</button>
             </form>
         </main>
         <!-- /FORM -->
 
-        <!-- RODAPÉ -->
-        <footer>
-            <p class="copyright">&copy; Copyright Lucas Friedrich - 2022</p>
-        </footer>
-        <!-- /RODAPÉ -->
+       <!-- RODAPÉ -->
+       <footer>
+        <ul class="social">
+            <a href="https://twitter.com/lucasfriedrichh"><img src="img/twitter.png" alt="Page twitter"  class="social"></a>
+            <a href=""><img src="img/insta.jpg" alt="Logo Instagram" class="social"></a>
+            <a href=""><img src="img/github.png" alt="Logo GitHub" class="social"></a>
+            <a href=""><img src="img/linkedin.png" alt="Logo Linkedin" class="social"></a>
+        </ul>
+        <p class="copyright">&copy; Copyright Lucas Friedrich - 2022</p>
+    </footer>
+    <!-- /RODAPÉ -->
     </body>
 </html>
