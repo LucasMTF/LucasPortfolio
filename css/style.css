@@ -1,0 +1,157 @@
+:root{
+	--background-color: #000000;
+    --background-secondary: #080808;
+	--principal-white: #ffffff;
+    --secondary-red: #ffffff;
+    --border-color: #ffffff;
+    --secondary-gray: #cecece; 
+}
+
+header {
+    background-color: var(--background-secondary);
+    padding: 30px 0;
+}
+
+
+main{
+    background-color: var(--background-color);
+}
+
+.box{
+	position: absolute;
+    width: 940px;
+}
+
+nav {
+    bottom: 1px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: var(--principal-white);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--secondary-red);
+    text-decoration: underline;
+}
+
+.work{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.work li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.work li:hover{
+    border-color: var(--principal-white);
+}
+
+.work li:hover h2{
+    font-size: 25px;
+    color: var(--principal-white);
+}
+
+.work h2{
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: var(--principal-white);
+}
+
+.work li img{
+    width: 100%;
+}
+
+.work .resume{
+    font-size: 18px;
+    color: var(--principal-white);
+}
+
+.work .more{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: red;
+    margin-bottom: var(--border-color);
+}
+
+footer{
+    text-align: center;
+    background-color: var(--background-secondary);
+    padding: 40px 0;
+}
+
+.copyright{
+    color: var(--secondary-gray);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+form label{
+    color: var(--principal-white);
+}
+
+main{
+    width: 100%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 60px 50px;
+    
+}
+
+form label, form p{
+    display: block;
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+
+form input, textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.submit{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background: rgb(214, 118, 0);
+    transform: scale(1.01);
+}
