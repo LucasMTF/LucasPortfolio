@@ -25,7 +25,9 @@ main {
     background: linear-gradient(-60deg, var(--principal-green), var(--background-secondary), var(--background-color), var(--background-color), var(--background-color), var(--background-color), var(--background-color));
     background-size: 100% 100%;
     animation: change 1s ease-in-out infinite;
-
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin: 0 auto;
 }
 
 .box {
@@ -37,9 +39,10 @@ div .stay {
     color: var(--secondary-green);
 }
 
+/* NAV */
 nav {
     bottom: 1px;
-    right: 0;
+    right: 15px;
 }
 
 nav li {
@@ -60,17 +63,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.social {
-    width: 50px;
-    margin: 0 auto;
-    padding: 50px 0;
-    display: inline;
-}
+/* /NAV */
 
+/* WORK */
 .work {
     width: 940px;
-    margin: 0 0 5% 5%; /* TOP - RIGHT - BOTTOM - LEFT*/
     padding: 10%;
+    margin-left: -110px;
 }
 
 .work li {
@@ -115,6 +114,48 @@ nav a:hover {
     margin-bottom: var(--principal-white);
 }
 
+.title-work {
+    font-size: 40px;
+    color: var(--principal-white);
+    margin: 5% 0% 0% 4.5%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    font-weight: bold;
+}
+
+.subtitle-work{
+    font-size: 18px;
+    color: var(--principal-white);
+    margin: 0% 0% -5% 4.5%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    
+}
+
+.read-more-text{
+    display: none;
+    color: var(--principal-white);
+}
+
+.read-more-text--show{
+    display: inline;
+}
+
+.read-more-btn{
+    color: var(--secondary-gray);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.read-more-btn:hover{
+    color: var(--secondary-green);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* /WORK */
+
+
+/* footer */
+
 footer {
     text-align: center;
     background-color: var(--background-secondary);
@@ -127,20 +168,54 @@ footer {
     margin-top: 10px;
 }
 
+.social {
+    width: 50px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: inline;
+    font-size: 12px;
+}
+
+
+/* footer */
+
+/* Contato */
+
+.formulario{
+    background-color: var(--principal-black);
+    border: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.email{
+    text-decoration: underline;
+    color: var(--secondary-green);
+}
+
+
+.title-contact{
+    font-size: 40px;
+    color: var(--principal-white);
+    margin: 2% 0% 0% 3%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    font-weight: bold;
+}
+
+.contact-buttom{
+    font-size: 18px;
+    color: var(--principal-white);
+    margin: 0 4% 2% 3%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    padding: 0% 50% 0% 0%;
+}
 
 form label {
     color: var(--principal-white);
 }
 
-main {
-    width: 100%;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    margin: 0 auto;
-}
 
 form {
-    margin: 6.5% 3% 10% 3%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    margin: 3% 3% 6% 3%; /* TOP - RIGHT - BOTTOM - LEFT*/
 }
 
 form label,
@@ -176,6 +251,9 @@ textarea {
     transform: scale(1.01);
 }
 
+/* /Contato */
+
+/* Home */
 main .title-home {
     color: var(--principal-white);
     font-family: sans-serif;
@@ -187,7 +265,7 @@ main .title-home {
 .resume-home-top {
     color: var(--principal-white);
     font-size: 20px;
-    margin: 15% 0% 2% 5%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    margin: 13% 0% 2% 5%; /* TOP - RIGHT - BOTTOM - LEFT*/
 
 }
 
@@ -206,25 +284,12 @@ main .title-home {
     text-decoration: none;
 }
 
-.social {
-    font-size: 12px;
-}
+/* /Home */
 
-
-.title-skills {
-    font-size: 50px;
-    color: var(--principal-white);
-    margin: 5% 0% 2.5% 5%; /* TOP - RIGHT - BOTTOM - LEFT*/
-}
-
-.resume-skills {
-    font-size: 18px;
-    color: var(--principal-white);
-    margin: 2.5% 0% 5% 5%; /* TOP - RIGHT - BOTTOM - LEFT*/
-}
-
+/* Sobre */
 .title-about{
     font-size: 40px;
+    font-weight: bold;
     color: var(--principal-white);
     margin: 5% 0% 5% 3%; /* TOP - RIGHT - BOTTOM - LEFT*/
 }
@@ -236,21 +301,173 @@ main .title-home {
     padding: 0% 50% 0% 0%;
 }
 
-.formulario{
-    background-color: var(--principal-black);
-    border: #000000;
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 15px;
-}
 
 .div-about{
     padding-bottom: 6%;
 }
 
-.contact-buttom{
+/* Sobre */
+
+
+/* SKILL */
+
+.separador{
+    display: inline-flex;
+}
+
+.title-skill {
+    font-size: 40px;
+    color: var(--principal-white);
+    margin: 5% 0% 0% 4.5%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    font-weight: bold;
+}
+
+.subtitle-skill{
     font-size: 18px;
     color: var(--principal-white);
-    margin: 0 4% 2% 3%; /* TOP - RIGHT - BOTTOM - LEFT*/
-    padding: 0% 50% 0% 0%;
+    margin: 0% 0% 0% 4.5%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    
 }
+
+.skill-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.skill-subtitle {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.containertop{
+    padding-top:60px;
+}
+
+.containerbotton{
+    padding-bottom: 100px;
+}
+
+.skill {
+    background: var(--background-color);
+    text-transform: uppercase;
+    list-style: none;
+    width: 500px;
+    margin: 0 0 5% 5%; /* TOP - RIGHT - BOTTOM - LEFT*/
+    color: var(--principal-white);
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(65, 65, 65, 0.25), 0 10px 10px var(--principal-green);
+}
+
+.skill li {
+    margin: 20px;
+    padding: 10px;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, var(--secondary-green) 0%, var(--principal-green) 100%);
+}
+
+.html {
+    width: 85%;
+    animation: html 3s;
+}
+
+.css {
+    width: 54%;
+    animation: css 3s;
+}
+
+.java {
+    width: 40%;
+    animation: java 3s;
+}
+
+.javascript {
+    width: 60%;
+    animation: javascript 3s;
+}
+
+.php{
+    width: 85%;
+    animation: php 3s;
+}
+
+@keyframes php{
+    0%{width: 0%;}100%{width: 85%;}
+}
+
+@keyframes html{
+    0%{width: 0%;}100%{width: 85%;}
+}
+
+@keyframes css{
+    0%{width: 0%;}100%{width: 54%;}
+}
+
+@keyframes java{
+    0%{width: 0%;}100%{width: 40%;}
+}
+
+@keyframes javascript{
+    0%{width: 0%;}100%{width: 60%;}
+}
+
+/* SOFTSKILLS */
+
+.criatividade{
+    width: 85%;
+    animation: criatividade 3s;
+}
+
+@keyframes criatividade{
+    0%{width: 0%;}100%{width: 85%;}
+}
+
+.comunicacao{
+    width: 75%;
+    animation: comunicacao 3s;
+}
+
+@keyframes comunicacao{
+    0%{width: 0%;}100%{width: 75%;}
+}
+
+.teamwork{
+    width: 90%;
+    animation: teamwork 3s;
+}
+
+@keyframes teamwork{
+    0%{width: 0%;}100%{width: 90%;}
+}
+
+.gestao{
+    width: 88%;
+    animation: gestao 3s;
+}
+
+@keyframes gestao{
+    0%{width: 0%;}100%{width: 88%;}
+}
+
+/* /SOFTSKILLS */
+
+/* /SKILL */
